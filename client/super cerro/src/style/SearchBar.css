@@ -1,0 +1,56 @@
+/* Generạl styles */
+.search-bar-container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+/* Style for the input */
+.search-bar-input {
+    width: 100%;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    font-size: 16px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s;
+}
+
+/* focus event */
+.search-bar-input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* The list style */
+.results-list {
+    position: absolute;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 0 0 25px 25px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+/* General Style of the list element */
+.results-list li {
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.results-list li:hover {
+    background-color: #f0f0f0;
+}
+
+/* Responsivity*/
+@media (max-width: 600px) {
+    .search-bar-container {
+        max-width: 80%;
+        margin: 20px 20px;
+    }
+}

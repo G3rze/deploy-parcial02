@@ -1,0 +1,29 @@
+{
+  "name": "super-cerro",
+  "version": "1.0.0",
+  "description": "API para manejar la lista de compras de la tienda Super Cerro",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UCASV/02-2024-parcial-2-secci-n-2-G3rze.git"
+  },
+  "keywords": [
+    "tienda",
+    "api",
+    "cerro"
+  ],
+  "author": "Gerson Bermúdez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/UCASV/02-2024-parcial-2-secci-n-2-G3rze/issues"
+  },
+  "homepage": "https://github.com/UCASV/02-2024-parcial-2-secci-n-2-G3rze#readme",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "cors": "^2.8.5",
+    "express": "^4.21.1"
+  }
+}

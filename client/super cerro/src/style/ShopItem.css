@@ -1,0 +1,124 @@
+/* General style for the shopitem card */
+.shop-item {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 16px;
+    width: 100%;
+    max-width: 600px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    margin-bottom: 20px;
+}
+
+/* Action when the item is bought */
+.shop-item.bought .shop-item-title {
+    color: #888888;
+    text-decoration: line-through;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+/* image of the product */
+.shop-item-image {
+    max-width: 80px;
+    height: auto;
+    border-radius: 4px;
+    margin-right: 16px;
+}
+
+/* style of the product info in the card */
+.shop-item-info {
+    display: flex;
+    flex-direction: column;
+    margin-right: 24px;
+    text-align: left;
+}
+
+.shop-item-details {
+    flex: 1;
+    text-align: left;
+}
+
+.shop-item-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 4px;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+/* buttom container */
+.shop-item-actions {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+/* button style*/
+.shop-item-buy, .shop-item-delete {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+    width: 100%;
+    transition: background-color 0.2s ease;
+}
+
+.shop-item-buy {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.shop-item-buy:hover {
+    background-color: #45A049;
+}
+
+.shop-item-delete {
+    background-color: #f44336;
+    color: white;
+}
+
+.shop-item-delete:hover {
+    background-color: #e53935;
+}
+
+/* Responsivity */
+@media (max-width: 768px) {
+    .shop-item {
+        max-width: 80% !important;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 12px;
+    }
+
+    .shop-item-image {
+        max-width: 60px;
+        margin: 12px auto;
+    }
+
+    .shop-item-info {
+        margin-right: 0;
+        margin-bottom: 12px;
+    }
+
+    .shop-item-actions {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .shop-item-title {
+        font-size: 16px;
+    }
+
+    .shop-item-buy, .shop-item-delete {
+        font-size: 12px;
+    }
+}
+
